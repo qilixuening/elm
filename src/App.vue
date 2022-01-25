@@ -1,10 +1,7 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <h3>elm</h3>
-    </div>
     <keep-alive>
-        <router-view v-if="$router.meta.keepAlive">
+        <router-view v-if="$route.meta.keepAlive">
             <!--这里会被缓存的视图组件，比如Home-->
         </router-view>
     </keep-alive>
@@ -13,6 +10,20 @@
     </router-view>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  data () {
+    return {
+
+    }
+  },
+  mounted () {
+
+  }
+}
+</script>
 
 <style lang="less">
 </style>
