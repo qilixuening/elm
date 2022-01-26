@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <keep-alive>
-        <router-view v-if="$route.meta.keepAlive">
-            <!--这里会被缓存的视图组件，比如Home-->
-        </router-view>
-    </keep-alive>
-    <router-view v-if="!$route.meta.keepAlive">
-        <!--这里是不被缓存的视图组件，比如Edit-->
-    </router-view>
+    <transition name="router-fade" mode="out-in">
+      <keep-alive>
+          <!--这里会被缓存的视图组件，比如Home-->
+          <router-view v-if="$route.meta.keepAlive" />
+      </keep-alive>
+    </transition>
+    <transition name="router-fade" mode="out-in">
+      <!--这里是不被缓存的视图组件，比如Edit-->
+      <router-view v-if="!$route.meta.keepAlive" />
+    </transition>
+    <svg-icon></svg-icon>
   </div>
 </template>
 
 <script>
+import svgIcon from '@/components/svg.vue'
+
 export default {
   name: 'App',
+  components: {
+    svgIcon
+  },
   data () {
     return {
 

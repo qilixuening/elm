@@ -55,3 +55,40 @@
     <slot name="changeLogin" />
   </header>
 </template>
+
+<script>
+import { mapState, mapActions } from 'vuex'
+
+export default {
+  data: () => ({
+
+  }),
+  mounted () {
+    this.getUserInfo()
+  },
+  props: {
+    signinUp: {
+      type: Boolean,
+      default: false
+    },
+    headTitle: {
+      type: String,
+      default: ''
+    },
+    goBack: {
+      type: Boolean,
+      default: true
+    }
+  },
+  computed: {
+    ...mapState([
+      'userInfo'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'getUserInfo'
+    ])
+  }
+}
+</script>

@@ -1,6 +1,10 @@
 <template>
   <div class="home-container">
-    ELE.me
+    <div>ELE.me</div>
+    <section>
+      {{ guessCity }}
+    </section>
+    <section>{{ guessCityId }}</section>
   </div>
 </template>
 
