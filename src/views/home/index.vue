@@ -29,12 +29,11 @@
       <h4 class="city_title">热门城市</h4>
       <ul class="citylistul clear">
         <router-link
-          tag="li"
-          v-for="city in hotcity"
-          :key="city.id"
+          v-for="city in hotCities"
           :to="'/city/'+city.id"
+          :key="city.id"
         >
-          {{ city.name }}
+          <li>{{ city.name }}</li>
         </router-link>
       </ul>
     </section>
@@ -42,7 +41,7 @@
 </template>
 
 <script>
-import headTop from '@/components/head.vue'
+import headTop from '@/components/Head.vue'
 import {
   cityGuess,
   hotcity,

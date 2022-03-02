@@ -68,8 +68,8 @@ export default {
   },
   props: {
     signinUp: {
-      type: Boolean,
-      default: false
+      type: String,
+      default: ''
     },
     headTitle: {
       type: String,
@@ -95,7 +95,7 @@ export default {
 
 <style lang='less' scoped>
   #head_top{
-    background-color: $blue;
+    background-color: #3190e8;
     position: fixed;
     z-index: 100;
     left: 0;
