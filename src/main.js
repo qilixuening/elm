@@ -5,8 +5,11 @@ import store from './store'
 
 import 'amfe-flexible'
 
-Vue.config.productionTip = false
+import vant from 'vant'
+import 'vant/lib/index.css'
 
+Vue.config.productionTip = false
+Vue.use(vant)
 new Vue({
   router,
   store,
