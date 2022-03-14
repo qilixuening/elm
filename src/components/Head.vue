@@ -94,7 +94,7 @@ export default {
 </script>
 
 <style lang='less' scoped>
-  #head_top{
+  #head-container{
     background-color: #3190e8;
     position: fixed;
     z-index: 100;

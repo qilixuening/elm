@@ -90,7 +90,7 @@ export default {
   .head_logo {
     left: 0.4rem;
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 24px;
     color: #fff;
     width: 2.3rem;
     height: 0.7rem;
@@ -99,22 +99,22 @@ export default {
     transform: translateY(-50%);
   }
   .city_nav {
-    padding-top: 2.35rem;
+    padding-top: 75px;
     border-top: 1px solid #e4e4e4;
     background-color: #fff;
-    margin-bottom: 0.4rem;
+    margin-bottom: 14px;
     .city_tip {
       display: flex;
       justify-content: space-between;
-      line-height: 1.45rem;
-      padding: 0 0.45rem;
+      line-height: 32px;
+      padding: 0 18px;
       span:nth-of-type(1) {
-          font-size: 0.55rem;
+          font-size: 16px;
           color: #666;
       }
       span:nth-of-type(2) {
           font-weight: 900;
-          font-size: 0.475rem;
+          font-size: 14px;
           color: #9f9f9f;
       }
     }
@@ -122,35 +122,36 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 1.8rem;
-      padding: 0 0.45rem;
+      height: 56px;
+      padding: 0 16px;
       border-top: 1px solid #e4e4e4;
       border-bottom: 2px solid #e4e4e4;
-      font: 0.75rem/1.8rem 'Microsoft YaHei';
+      font: 24px/32px 'Microsoft YaHei';
       span:nth-of-type(1) {
         color: #3190e8;
       }
       .arrow_right {
-        width: 0.6rem;
-        height: 0.6rem;
+        width: 24px;
+        height: 24px;
         fill: #999;
       }
     }
   }
   #hot_city_container {
     background-color: #fff;
-    margin-bottom: 0.4rem;
+    margin-bottom: 16px;
   }
   .citylistul {
     li {
       float: left;
       text-align: center;
       color: #3190e8;
-      border-bottom: 0.025rem solid #e4e4e4;
-      border-right: 0.025rem solid #e4e4e4;
+      border-bottom: 1px solid #e4e4e4;
+      border-right: 1px solid #e4e4e4;
+      padding-top: 12px;
       width: 25%;
-      height: 1.75rem;
-      font: 0.6rem/1.75rem 'Microsoft YaHei';
+      height: 56px;
+      font: 24px/32px 'Microsoft YaHei';
     }
     li:nth-of-type(4n) {
       border-right: none;
